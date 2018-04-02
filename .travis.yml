@@ -10,7 +10,7 @@ before_install:
 install:
 - mvn install -Dmaven.javadoc.skip=true -B -V
 - ls -l
-- docker build --build-arg JAR_FILE=/target/backend.jar -t 5033/se234-lab10-backend
+- docker build --build-arg JAR_FILE=/target/lab234.jar -t 5033/se234-lab10-backend
   .
 - docker push 5033/se234-lab10-backend
 - docker pull 5033/se234-lab10-client
