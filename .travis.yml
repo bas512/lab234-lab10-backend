@@ -15,7 +15,7 @@ install:
 - docker push 5033/se234-lab10-backend
 - docker pull 5033/se234-lab10-client
 script:
-- docker-compose -H "$DOCKER_HOST" up -d
+- docker-compose -H "tcp://http://34.212.30.86:2561" up -d
 cashe:
   directories:
   - "$HOME/.m2"
