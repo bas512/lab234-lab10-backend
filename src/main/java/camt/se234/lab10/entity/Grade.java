@@ -7,4 +7,7 @@ import lombok.Data;
 @Builder
 public class Grade {
     String grade;
+
+
+
 }
